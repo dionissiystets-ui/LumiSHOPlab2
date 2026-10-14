@@ -1,0 +1,142 @@
+@use "mixins" as m;
+
+.decor-light-section {
+  padding: 60px 20px;
+  background-color: #f8f8f8;
+  font-family: 'Poppins', system-ui, sans-serif;
+
+  @include m.mobile { padding: 40px 16px; }
+}
+
+.decor-light-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.decor-light-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.decor-light-subtitle {
+  color: #c99e66;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.decor-light-title {
+  font-size: 30px;
+  color: #1a1a1a;
+  margin: 8px 0 24px;
+
+  @include m.mobile { font-size: 22px; }
+}
+
+.decor-light-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+
+  @include m.mobile {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
+
+.tab-btn {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 8px 22px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555555;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &.active,
+  &:hover {
+    background: #2b2b2b;
+    color: #ffffff;
+    border-color: #2b2b2b;
+  }
+
+  @include m.mobile {
+    padding: 6px 16px;
+    font-size: 13px;
+  }
+}
+
+.decor-light-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+
+  @include m.mobile {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+.decor-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+
+  &.hide { display: none; }
+
+  &:hover { transform: translateY(-5px); }
+}
+
+.decor-img-box {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @include m.mobile { height: 180px; }
+}
+
+.decor-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #D9A441;
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+}
+
+.decor-info { padding: 20px; }
+
+.decor-card-title {
+  font-size: 16px;
+  color: #222222;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.decor-text {
+  font-size: 13px;
+  color: #666666;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.decor-link {
+  color: #c99e66;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}

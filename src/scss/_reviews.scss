@@ -1,0 +1,90 @@
+@use "mixins" as m;
+
+.reviews {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap);
+  margin-top: 60px;
+
+  &__text {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 512px;
+
+    @include m.mobile { max-width: none; }
+  }
+
+  &__nav {
+    display: flex;
+    gap: 12px;
+  }
+
+  img {
+    flex: 0 1 562px;
+    width: 100%;
+    max-width: 562px;
+    aspect-ratio: 562 / 340;
+    border-radius: 6px;
+    object-fit: cover;
+
+    @include m.mobile {
+      flex-basis: auto;
+      max-width: none;
+    }
+  }
+
+  @include m.mobile {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  &__ava {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--c-dark);
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  strong {
+    display: block;
+    font-size: 12px;
+  }
+
+  span {
+    color: var(--c-muted);
+    font-size: 9px;
+  }
+}
+
+blockquote {
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.round {
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+
+  &--green {
+    background: var(--c-primary);
+    color: #ffffff;
+  }
+}

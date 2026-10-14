@@ -1,0 +1,37 @@
+// Змінні Sass (використовуються в partials через @use "variables" as v)
+$c-primary: #D9A441;
+$c-text: #b8a06a;
+$c-muted: #6b6d78;
+$c-bg: #ffffff;
+$c-dark: #22232f;
+$c-on-dark: #ffffff;
+$c-accent: #b8a06a;
+
+$radius: 8px;
+$container: 1240px;
+
+// Брейкпоінти (ті самі, що в лабораторній 1)
+$bp-tablet: 1024px;
+$bp-mobile: 768px;
+$bp-small: 480px;
+
+// CSS custom properties лишаються, бо їх читає і JS/браузер у рантаймі
+:root {
+  --c-primary: #{$c-primary};
+  --c-primary-dark: #{$c-primary};
+  --c-text: #{$c-text};
+  --c-muted: #{$c-muted};
+  --c-bg: #{$c-bg};
+  --c-border: #{$c-primary};
+  --c-dark: #{$c-dark};
+  --c-on-dark: #{$c-on-dark};
+  --c-accent: #{$c-accent};
+
+  --radius: #{$radius};
+  --container: #{$container};
+  --gap: clamp(16px, 3vw, 40px);
+
+  --fs-title: clamp(28px, 1.2rem + 2.4vw, 48px);
+  --fs-heading: clamp(22px, 1.1rem + 1.1vw, 32px);
+  --fs-body: clamp(13px, 0.78rem + 0.15vw, 15px);
+}

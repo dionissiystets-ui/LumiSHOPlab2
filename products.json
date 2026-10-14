@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Дизайнерський торшер",
+    "price": 75.0,
+    "oldPrice": 82.0,
+    "image": "img/625e19e59db8f0b7176df00719754f34.jpg",
+    "description": "Ceiling Light",
+    "link": "#products"
+  },
+  {
+    "id": 2,
+    "title": "Стельовий світильник",
+    "price": 50.0,
+    "oldPrice": 70.0,
+    "image": "img/7f1e5f9b31602eb07a9671c443fa9e38.jpg",
+    "description": "Wood Chair",
+    "link": "#products"
+  },
+  {
+    "id": 3,
+    "title": "Підвісна люстра",
+    "price": 105.0,
+    "oldPrice": 120.0,
+    "image": "img/906807c766c51a83067fd90344e27bfe.jpg",
+    "description": "Papper Cupboard",
+    "link": "#products"
+  },
+  {
+    "id": 4,
+    "title": "Точковий світильник",
+    "price": 82.0,
+    "oldPrice": 100.0,
+    "image": "img/b1ed910b78dc4ef5d6a0610f0c19ff30.png",
+    "description": "Ole Gundorse Spring bed",
+    "link": "#products"
+  },
+  {
+    "id": 5,
+    "title": "Дизайнерський торшер",
+    "price": 200.0,
+    "oldPrice": 210.0,
+    "image": "img/c8d8f3ba4ae205f84753d8652d34bb06.jpg",
+    "description": "Treos Seroes 911",
+    "link": "#products"
+  },
+  {
+    "id": 6,
+    "title": "Підвісна люстра",
+    "price": 45.0,
+    "oldPrice": 50.0,
+    "image": "img/c9d5598ba82d7d6a8a6955c67bcdd38b.jpg",
+    "description": "Multi Bilderman Slibberstad",
+    "link": "#products"
+  },
+  {
+    "id": 7,
+    "title": "Стельовий світильник",
+    "price": 320.0,
+    "oldPrice": 325.0,
+    "image": "img/d380ab770a09751ee3b6783a2bc22ee4.jpg",
+    "description": "XORA Corner Desk",
+    "link": "#products"
+  },
+  {
+    "id": 8,
+    "title": "Підвісна люстра",
+    "price": 225.0,
+    "oldPrice": 240.0,
+    "image": "img/f16137ca57b148276f5ded22261718d3.jpg",
+    "description": "Black Forest Series Wooden crib",
+    "link": "#products"
+  }
+]

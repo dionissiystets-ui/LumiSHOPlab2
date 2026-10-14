@@ -1,0 +1,13 @@
+// Головний файл: лише підключає частини (@use, не @import)
+@use "variables";
+@use "base";
+@use "buttons";
+@use "header";
+@use "hero";
+@use "about";
+@use "store";
+@use "products";
+@use "decor";
+@use "reviews";
+@use "news";
+@use "footer";

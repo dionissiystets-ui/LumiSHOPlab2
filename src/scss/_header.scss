@@ -1,0 +1,77 @@
+@use "mixins" as m;
+
+.header {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.nav {
+  ul {
+    display: flex;
+    gap: 56px;
+    font-size: 15px;
+  }
+
+  a {
+    padding: 4px 0;
+    opacity: 0.85;
+
+    &.active,
+    &:hover {
+      opacity: 1;
+      font-weight: 600;
+    }
+  }
+
+  @include m.tablet {
+    ul { gap: 32px; }
+  }
+
+  @include m.mobile {
+    position: absolute;
+    top: 100%;
+    right: 16px;
+    left: 16px;
+    display: none;
+    padding: 16px;
+    border-radius: var(--radius);
+    background: var(--c-dark);
+
+    &.open { display: block; }
+
+    ul {
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border: 0;
+  background: none;
+
+  span {
+    display: block;
+    height: 2px;
+    background: #ffffff;
+  }
+
+  @include m.mobile {
+    display: flex;
+  }
+}

@@ -1,0 +1,116 @@
+@use "mixins" as m;
+
+.hero {
+  position: relative;
+  min-height: 848px;
+  margin-bottom: 104px;
+  color: #D9A441;
+
+  // Шлях від css/style.css до картинки
+  background-image:
+    linear-gradient(to bottom, transparent 85%, rgba(255, 255, 255, 0.85)),
+    url("../img/3b2d9735a3ce99d98277b3eea29043e9.png");
+  background-position: center, center;
+  background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat;
+
+  h1 {
+    max-width: 800px;
+    font-size: var(--fs-title);
+  }
+
+  @include m.mobile {
+    min-height: 640px;
+    margin-bottom: 176px;
+    background-position: center, center;
+  }
+
+  @include m.small {
+    background-position: center, 55% center;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding-top: clamp(56px, 10vw, 128px);
+    text-align: center;
+
+    p {
+      max-width: 464px;
+      font-size: 15px;
+    }
+
+    .btn { margin-top: 34px; }
+
+    @include m.mobile {
+      padding-top: 64px;
+    }
+  }
+}
+
+.btn--glass {
+  @include m.small {
+    min-width: 192px;
+    height: 48px;
+  }
+}
+
+.stats {
+  position: absolute;
+  bottom: -90px;
+  left: 50%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  width: min(1240px, calc(100% - 32px));
+  height: 148px;
+  padding: 0;
+  transform: translateX(-50%);
+  border-radius: 16px;
+  background: var(--c-primary);
+  color: #ffffff;
+  text-align: center;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    height: 88px;
+    padding: 8px 0;
+    border-left: 1px solid rgba(255, 255, 255, 0.35);
+
+    &:first-child { border-left: 0; }
+  }
+
+  strong {
+    font-size: 31px;
+    font-weight: 600;
+    line-height: 1.1;
+  }
+
+  span {
+    font-size: 15px;
+    opacity: 0.9;
+  }
+
+  @include m.mobile {
+    bottom: -144px;
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+    padding: 16px 0;
+    row-gap: 16px;
+
+    li {
+      height: 88px;
+
+      &:nth-child(odd) { border-left: 0; }
+    }
+  }
+
+  @include m.small {
+    strong { font-size: 22px; }
+  }
+}

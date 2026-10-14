@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FurniShop — Creative Home Simplify Your Furniture</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Saira:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<section class="hero" id="home">
+  <header class="header container">
+    <a href="#home" class="logo">LumiDecor</a>
+    <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    <nav id="nav" class="nav" aria-label="Main">
+      <ul>
+        <li><a href="#home" class="active">Головна</a></li>
+        <li><a href="#about">Про нас</a></li>
+        <li><a href="#products">Каталог</a></li>
+        <li><a href="#contact">Контакти</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero__content container">
+    <h1>Створіть ідеальну атмосферу за допомогою світла та декору</h1>
+    <p>Ексклюзивні дизайнерські світильники, дзеркала та елементи інтер'єру, що перетворюють будь-який простір на дім вашої мрії.</p>
+    <a href="#products" class="btn btn--glass">Обрати освітлення</a>
+  </div>
+
+  <ul class="stats container">
+    <li><strong>7</strong><span>Років<br>створюємо затишок</span></li>
+    <li><strong>15000+</strong><span>задоволених<br> клієнтів</span></li>
+    <li><strong>500+</strong><span>моделей<br> світильників</span></li>
+    <li><strong>100%</strong><span>гарантія<br> якості</span></li>
+  </ul>
+</section>
+
+<main>
+  <section class="about container" id="about">
+    <img src="img/3402fdf1fc453260dada9b1b1e4a5293.jpg" width="554" height="443" alt="Grey sofa with a wooden coffee table">
+    <div class="about__text">
+      <h2>Наша філософія</h2>
+      <p>Наші рішення поєднують у собі сучасний мінімалізм, функціональність та преміальні матеріали. Ми допомагаємо підібрати освітлення та декор під будь-який інтер'єр.</p>
+      <ul class="checks">
+        <li>
+          <h3>Індивідуальні сценарії освітлення</h3>
+          <p>Розраховуємо необхідну яскравість та температуру світла під ваші завдання.</p>
+        </li>
+        <li>
+          <h3>Преміальні матеріали</h3>
+          <p>Латунь, матове скло, натуральне дерево та екологічна кераміка.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="store container" aria-labelledby="store-title">
+    <div class="store__intro">
+      <h2 id="store-title">Категорії товарів</h2>
+      <p>Відкрийте для себе найновіші тренди в дизайні світла та інтер'єрного декору цього сезону.</p>
+      <a href="#products" class="link-arrow">Check All <span aria-hidden="true">→</span></a>
+    </div>
+    <ul class="store__track" id="storeTrack">
+      <li><a href="#products"><img src="img/03cef50bbefb006312c0ce4892c2c05e.png" width="265" height="400" alt=""><span>Інтер'єрний декор</span></a></li>
+      <li><a href="#products"><img src="img/27730c9101481900e2bcd92262ec8719.jpg" width="265" height="400" alt=""><span>Підлогові торшери</span></a></li>
+      <li><a href="#products"><img src="img/370e9b46ed38170a56c1c3dc9dd58cbc.png" width="265" height="400" alt=""><span>Стельові люстри</span></a></li>
+      <li><a href="#products"><img src="img/cat-lighting.png" width="265" height="400" alt=""><span>Стельові люстри</span></a></li>
+    </ul>
+  </section>
+
+  <section class="best container">
+    <div class="best__text">
+      <h2>Блок переваг</h2>
+      <p>Ми не просто продаємо товари — ми створюємо концепцію затишку. Кожна деталь у нашому каталозі проходить суворий відбір за критеріями якості, безпеки та унікальності дизайну</p>
+    </div>
+    <img src="img/1a5fd2274cf66005535b9b9a21cf6d77.jpg" width="554" height="399" alt="Bright kitchen with wooden stools">
+  </section>
+
+  <section class="products container" id="products" aria-labelledby="products-title">
+    <h2 id="products-title">Усі товари</h2>
+    <p class="products__sub">Обирайте серед найкращих позицій освітлення та декору з бездоганною якістю виконання.</p>
+
+    <div class="grid" id="productGrid">
+      <!-- cards:start -->
+      <article class="card"><div class="card__img"><img src="img/625e19e59db8f0b7176df00719754f34.jpg" alt="Ceiling Light"><button class="add" aria-label="Add Ceiling Light">+</button></div><h3><a href="#products">Дизайнерський торшер</a></h3><p class="price">$75.00 <s>$82.00</s></p></article>
+      <article class="card"><div class="card__img"><img src="img/7f1e5f9b31602eb07a9671c443fa9e38.jpg" alt="Wood Chair"><button class="add" aria-label="Add Wood Chair">+</button></div><h3><a href="#products">Стельовий світильник</a></h3><p class="price">$50.00 <s>$70.00</s></p></article>
+      <article class="card"><div class="card__img"><img src="img/906807c766c51a83067fd90344e27bfe.jpg" alt="Papper Cupboard"><button class="add" aria-label="Add Papper Cupboard">+</button></div><h3><a href="#products">Підвісна люстра</a></h3><p class="price">$105.00 <s>$120.00</s></p></article>
+      <article class="card"><div class="card__img"><img src="img/b1ed910b78dc4ef5d6a0610f0c19ff30.png" alt="Ole Gundorse Spring bed"><button class="add" aria-label="Add Ole Gundorse Spring bed">+</button></div><h3><a href="#products">Точковий світильник</a></h3><p class="price">$82.00 <s>$100.00</s></p></article>
+      <article class="card"><div class="card__img"><img src="img/c8d8f3ba4ae205f84753d8652d34bb06.jpg" alt="Treos Seroes 911"><button class="add" aria-label="Add Treos Seroes 911">+</button></div><h3><a href="#products">Дизайнерський торшер</a></h3><p class="price">$200.00 <s>$210.00</s></p></article>
+      <article class="card"><div class="card__img"><img src="img/c9d5598ba82d7d6a8a6955c67bcdd38b.jpg" alt="Multi Bilderman Slibberstad"><button class="add" aria-label="Add Multi Bilderman Slibberstad">+</button></div><h3><a href="#products">Підвісна люстра</a></h3><p class="price">$45.00 <s>$50.00</s></p></article>
+      <article class="card"><div class="card__img"><img src="img/d380ab770a09751ee3b6783a2bc22ee4.jpg" alt="XORA Corner Desk"><button class="add" aria-label="Add XORA Corner Desk">+</button></div><h3><a href="#products">Стельовий світильник</a></h3><p class="price">$320.00 <s>$325.00</s></p></article>
+      <article class="card"><div class="card__img"><img src="img/f16137ca57b148276f5ded22261718d3.jpg" alt="Black Forest Series Wooden crib"><button class="add" aria-label="Add Black Forest Series Wooden crib">+</button></div><h3><a href="#products">Підвісна люстра</a></h3><p class="price">$225.00 <s>$240.00</s></p></article>
+      <!-- cards:end -->
+    </div>
+
+    <div class="pager" id="pager">
+      <button class="pager__arrow" data-dir="-1" aria-label="Previous page">←</button>
+      <div class="pager__dots"></div>
+      <button class="pager__arrow" data-dir="1" aria-label="Next page">→</button>
+    </div>
+  </section>
+
+  <section class="decor-light-section">
+  <div class="decor-light-container">
+    <div class="decor-light-header">
+      <span class="decor-light-subtitle">Затишок у деталях</span>
+      <h2 class="decor-light-title">Освітлення & Декор</h2>
+      
+      <div class="decor-light-tabs">
+        <button class="tab-btn active" data-filter="all">Усе</button>
+        <button class="tab-btn" data-filter="lighting">Освітлення</button>
+        <button class="tab-btn" data-filter="decor">Декор</button>
+      </div>
+    </div>
+
+    <div class="decor-light-grid">
+      <article class="decor-card" data-category="lighting">
+        <div class="decor-img-box">
+          <img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=600" alt="Багаторівневе освітлення">
+          <span class="decor-badge">Освітлення</span>
+        </div>
+        <div class="decor-info">
+          <h3 class="decor-card-title">Багаторівневе світло: від торшерів до точкових ламп</h3>
+          <p class="decor-text">Як правильний розподiл джерел світла змінює геометрію кімнати та створює затишок.</p>
+          <a href="#" class="decor-link">Переглянути деталі &rarr;</a>
+        </div>
+      </article>
+
+      <article class="decor-card" data-category="decor">
+        <div class="decor-img-box">
+          <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=600" alt="Настінний декор">
+          <span class="decor-badge">Декор</span>
+        </div>
+        <div class="decor-info">
+          <h3 class="decor-card-title">Дзеркала та картини: акценти на порожніх стінах</h3>
+          <p class="decor-text">Правила композиції та підбору рам для сучасних мінімалістичних інтер'єрів.</p>
+          <a href="#" class="decor-link">Переглянути деталі &rarr;</a>
+        </div>
+      </article>
+
+      <article class="decor-card" data-category="lighting">
+        <div class="decor-img-box">
+          <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=600" alt="Підвісні люстри">
+          <span class="decor-badge">Освітлення</span>
+        </div>
+        <div class="decor-info">
+          <h3 class="decor-card-title">Дизайнерські люстри як головний центр тяжіння</h3>
+          <p class="decor-text">Вибираємо геометрію та матеріали світильників під обідню зону або вітальню.</p>
+          <a href="#" class="decor-link">Переглянути деталі &rarr;</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+  <section class="reviews container" aria-labelledby="rev-title">
+    <div class="reviews__text">
+      <h2 id="rev-title">Що про нас кажуть клієнти</h2>
+      <figure class="person">
+        <div class="person__ava" id="revAva">АК</div>
+        <figcaption><strong id="revName">Анна Коваль</strong><span id="revRole">Архітекторка інтер'єрів</span></figcaption>
+      </figure>
+      <blockquote id="revText">«М'яке підвісне світло та дизайнерський декор повністю змінили атмосферу нашої вітальні! Консультанти допомогли підібрати правильну температуру ламп, а доставка була дуже швидкою. Дякую за якість та затишок!»</blockquote>
+      <div class="reviews__nav">
+        <button class="round" id="revPrev" aria-label="Попередній відгук">←</button>
+        <button class="round round--green" id="revNext" aria-label="Наступний відгук">→</button>
+      </div>
+    </div>
+    <img src="img/f35ea4f4c2530a5aa02c9e437bff35c4.jpg" width="562" height="340" alt="Затишна вітальня з сучасним освітленням та декором">
+  </section>
+
+  <section class="news" id="contact" aria-labelledby="news-title">
+    <div class="news__inner container">
+      <form class="news__form" id="newsForm" novalidate>
+        <h2 id="news-title">Отримайте знижку на перше замовлення</h2>
+        <p>Приєднуйтесь до нашої розсилки новинок та акцій</p>
+        <div class="news__row">
+          <label for="email" class="sr-only">Ваш email</label>
+          <input type="email" id="email" placeholder="Введіть ваш email" required>
+          <button type="submit" class="btn btn--dark">Отримати знижку</button>
+        </div>
+        <p class="news__msg" id="newsMsg" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <a href="#home" class="logo">LumiDecor</a>
+      <ul class="socials">
+        <li><img src="img/Check 2.png" alt=""></li>
+        <li><img src="img/Check 3.png" alt=""></li>
+        <li><img src="img/Check 4.png" alt=""></li>
+        <li><img src="img/Check 6.png" alt=""></li>
+        <li><img src="img/Check 3.png" alt=""></li>
+      </ul>
+    </div>
+    <div class="footer__cols">
+      <nav aria-label="Наша продукція">
+        <h4>Наша Продукція</h4>
+        <ul>
+          <li><a href="#">Підвісні люстри</a></li>
+          <li><a href="#">Настільні лампи</a></li>
+          <li><a href="#">Підлогові торшери</a></li>
+          <li><a href="#">Дзеркала та декор</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Популярні категорії">
+        <h4>Популярне</h4>
+        <ul>
+          <li><a href="#">Точкове світло</a></li>
+          <li><a href="#">Настінні бра</a></li>
+          <li><a href="#">Вази та кераміка</a></li>
+          <li><a href="#">LED-комплектуючі</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Сервіси та ресурси">
+        <h4>Послуги</h4>
+        <ul>
+          <li><a href="#">Консультація дизайнера</a></li>
+          <li><a href="#">Підбір освітлення</a></li>
+          <li><a href="#">Розрахунок світла</a></li>
+          <li><a href="#">Блог про декор</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Про компанію">
+        <h4>Компанія</h4>
+        <ul>
+          <li><a href="#">Про нас</a></li>
+          <li><a href="#">Наші шоуруми</a></li>
+          <li><a href="#">Дизайнерам</a></li>
+          <li><a href="#">Контакти</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Інформація для покупців">
+        <h4>Покупцям</h4>
+        <ul>
+          <li><a href="#">Доставка та оплата</a></li>
+          <li><a href="#">Гарантія та повернення</a></li>
+          <li><a href="#">Акції та знижки</a></li>
+          <li><a href="#">Часті запитання</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="footer__copy">© LumiDecor 2026 - Усі права захищені</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

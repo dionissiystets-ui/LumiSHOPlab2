@@ -1,0 +1,28 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: var(--radius);
+  font-weight: 500;
+  transition: background 0.2s;
+
+  &--glass {
+    min-width: 256px;
+    height: 62px;
+    background: rgba(255, 255, 255, 0.28);
+    color: #ffffff;
+    backdrop-filter: blur(4px);
+
+    &:hover { background: rgba(255, 255, 255, 0.4); }
+  }
+
+  &--dark {
+    height: 44px;
+    padding: 0 24px;
+    background: var(--c-dark);
+    color: #ffffff;
+
+    &:hover { background: #000000; }
+  }
+}

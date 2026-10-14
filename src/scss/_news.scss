@@ -1,0 +1,68 @@
+@use "mixins" as m;
+
+.news {
+  display: flex;
+  align-items: center;
+  min-height: 490px;
+  padding: 48px 0;
+  background-color: var(--c-primary);
+
+  // Шлях від css/style.css до картинки
+  background-image:
+    linear-gradient(rgba(11, 74, 74, 0.15), rgba(11, 74, 74, 0.15)),
+    url("../img/newsletter.png");
+  background-position: center, left center;
+  background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat;
+  color: #ffffff;
+
+  @include m.mobile {
+    min-height: 384px;
+    background-position: center, 15% center;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: flex-end;
+
+    @include m.mobile { justify-content: flex-start; }
+  }
+
+  &__form {
+    width: min(558px, 100%);
+
+    h2 {
+      max-width: 224px;
+      font-size: clamp(20px, 1rem + 1vw, 24px);
+    }
+
+    > p {
+      margin: 12px 0;
+      font-size: 11px;
+    }
+  }
+
+  &__row {
+    display: flex;
+    gap: 12px;
+
+    input {
+      flex: 1;
+      min-width: 0;
+      height: 44px;
+      padding: 0 16px;
+      border: 0;
+      border-radius: var(--radius);
+      font: inherit;
+      font-size: 12px;
+    }
+
+    @include m.mobile { flex-direction: column; }
+  }
+
+  &__msg {
+    min-height: 24px;
+    margin-top: 8px;
+    font-size: 12px;
+  }
+}

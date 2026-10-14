@@ -1,0 +1,16 @@
+{
+  "name": "lumidecor",
+  "version": "1.0.0",
+  "description": "LumiDecor — адаптивний лендінг освітлення й декору (Sass + генерація карток на Node.js)",
+  "author": "Стець Діонісій",
+  "license": "ISC",
+  "scripts": {
+    "scss:build": "sass src/scss/main.scss css/style.css --no-source-map --style=compressed",
+    "scss:watch": "sass --watch src/scss/main.scss:css/style.css",
+    "build:cards": "node scripts/build-cards.js",
+    "build": "npm run build:cards && npm run scss:build"
+  },
+  "devDependencies": {
+    "sass": "^1.80.0"
+  }
+}
